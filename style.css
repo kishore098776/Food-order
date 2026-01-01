@@ -1,0 +1,209 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    text-align: center;
+}
+
+.sk{
+    background: #ff6f00;
+    color: white;
+   
+    justify-content: space-between;
+
+}
+
+.food-container {
+
+    
+    display: flex;          /* makes items in one row */
+    flex-wrap: wrap;       
+    gap: 20px;              
+    justify-content: center;
+    background-color: rgb(187, 174, 174);
+    padding: 10px;
+    width: 90%;
+    margin: auto;
+    border-color: black;
+    border-style: solid;
+    border-radius: 10px;
+    margin-top: 50px;
+
+}
+
+.food-card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    width: 180px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.food-card img {
+    width: 100%;
+    border-radius: 10px;
+    height: 180px;
+    
+}
+
+.food-card button {
+    background: #ff6f00;
+    color: white;
+    border: none;
+    padding: 8px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.food-card.highlight {
+    box-shadow: 0 0 12px 3px rgba(255,111,0,0.6);
+    transform: translateY(-4px);
+}
+
+.cart {
+    background: white;
+    width: 100%px;
+    border-color: black;
+    border-style: solid;
+    border-radius: 15px;
+    padding: 15px;
+    border-radius: 10px;
+
+
+}
+
+.search{
+    margin-top: 50px;
+    position: relative;
+}
+
+.removeBtn{
+    background: #e74c3c;
+    color: #fff;
+    border: none;
+    padding: 4px 8px;
+    margin-left: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.sales{
+    background: #fff;
+    width: 90%;
+    margin: 20px auto;
+    padding: 12px;
+    border-radius: 8px;
+    text-align: left;
+}
+.sales{display:none}
+.sales.show{display:block}
+.sales h2{margin-top:0}
+.sales button{background:#c0392b;color:#fff;border:none;padding:8px;border-radius:6px;cursor:pointer}
+
+.sale-record{margin-bottom:10px;padding:8px;border-bottom:1px dashed #ddd}
+.sale-details{margin-top:6px;padding-left:10px;color:#333}
+.sale-details ul{margin:6px 0;padding-left:18px}
+
+/* Modal / receipt styles */
+.modal-overlay{
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.45);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+.modal{
+    background: #fff;
+    padding: 18px;
+    border-radius: 8px;
+    width: 360px;
+    max-width: 95%;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+    text-align: left;
+}
+.modal h2{
+    margin-top:0;
+    
+}
+.receipt .receipt-table
+{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:8px
+}
+.receipt .receipt-table th,.receipt .receipt-table td
+{
+    border:1px solid #ddd;
+    padding:6px;
+    text-align:left
+}
+.receipt .receipt-table tfoot td
+{
+    font-weight:600
+}
+.receipt .receipt-table th:last-child,
+.receipt .receipt-table td:last-child { text-align: right; }
+.receipt .receipt-table td[colspan] { text-align: left; }
+
+#cartTable {
+    width: 100%;
+    border-collapse: collapse;
+;
+}
+.login{
+    margin-left: 1200px;
+}
+.login button{
+    background: #ff6f00;
+    color: white;
+    border: none;
+    padding: 8px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.login button:hover{
+    background: #e65c00;
+}
+.login {
+    text-align: center;
+}
+
+/* hide checkbox */
+#loginToggle {
+    display: none;
+}
+
+.btn {
+    padding: 8px 15px;
+    background: #4e54c8;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 5px;
+    display: inline-block;
+}
+.login {
+    text-align: center;
+}
+
+/* hide checkbox */
+#loginToggle {
+    display: none;
+}
+
+.btn {
+    padding: 8px 15px;
+    background: #4e54c8;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 5px;
+    display: inline-block;
+}
+
+

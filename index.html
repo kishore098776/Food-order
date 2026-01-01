@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Food Order Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div style="display: inline-flex; flex-direction: row; justify-content: space-around; width: 100%; background-color: #ff6f00;color: white; border-color:#ff6f00; border-style: solid; height: 60px;
+">
+    
+    <h1 class="sk">Welcom to YK Food Ordering Website</h1>
+    <h2 id="siteHeader">⋮</h2>  
+
+    </div>
+<div>
+
+     <div id="searchBar" class="search">
+        <input id="searchInput" style="width: 400px;height: 30px;border-color: black;
+     border-style: solid;border-radius: 15px;text-align: center;" type="text" placeholder="Search for food...">
+
+                   <button id="searchButton" type="button" style="position: relative;right: 90px;height: 24px;border-radius: 15px; color: rgb(255, 0, 0);">search</button>
+    </div>
+
+    <!-- Food Items -->
+    <div id="foodContainer" class="food-container">
+        <div class="food-card" style="border-color: black;border-style: solid;">
+            <img style="border-color: rgb(191, 0, 255);border-style: solid;"   src="https://img.sanishtech.com/u/3412ffaebbbbeccf3c37aae177eb5429.jpg" alt=>
+            <p>Pasta</p>  
+            <p>₹120</p>
+            <p>Creamy Pasta Delight</p>
+           
+    
+            <button onclick="addToCart('Pasta',120)">Add to Cart</button>
+        </div>
+
+        <div class="food-card" style="border-color: black;border-style: solid;">
+            <img style="border-color: rgb(191, 0, 255);border-style: solid;"   src="https://img.sanishtech.com/u/1fbee68066c8e0b4240fa17efe457cd3.jpg" alt=>
+            <p>Mutton Biryani</p>  
+            <p>₹250</p>
+            <p>Dum Mutton Biryani Special</p>
+          
+    
+            <button onclick="addToCart('Mutton Biryani',250)">Add to Cart</button>
+        </div>
+         <div class="food-card" style="border-color: black;border-style: solid;">
+            <img style="border-color: rgb(191, 0, 255);border-style: solid;"   src="https://img.sanishtech.com/u/124536b97c3976f37c5af792f44eae3b.jpg" alt=>
+            <p>Fried Rice</p>  
+            <p>₹90</p>
+            <p>Veg fried rice</p>
+           
+    
+            <button onclick="addToCart('Fried Rice',90)">Add to Cart</button>
+        </div>
+         <div class="food-card" style="border-color: black;border-style: solid;">
+            <img style="border-color: rgb(191, 0, 255);border-style: solid;"   src="https://img.sanishtech.com/u/8ce23eb978c9350663d2270986201c20.jpg" alt=>
+            <p>Chicken Biryani</p>  
+            <p>₹220</p>
+            <p>Hyderabadi style biryani</p>
+         
+    
+            <button onclick="addToCart('Chicken Biryani',220)">Add to Cart</button>
+        </div>
+         <div class="food-card" style="border-color: black;border-style: solid;">
+            <img style="border-color: rgb(191, 0, 255);border-style: solid;"   src="https://img.sanishtech.com/u/eff960f40e4fd308b3a91d733861d478.jpg" alt=>
+            <p>Naan</p>  
+            <p>₹35</p>
+            <p>Naan & Creamy Tikka Masala Combo</p>
+           
+   
+            <button onclick="addToCart('Naan',35)">Add to Cart</button>
+        </div>
+         <div class="food-card" style="border-color: black;border-style: solid;">
+            <img style="border-color: rgb(191, 0, 255);border-style: solid;"   src="https://img.sanishtech.com/u/5ae588bdc9d24ccfefe6171f2213c2f1.jpg" alt=>
+            <p>Parrota</p>  
+            <p>₹20</p>
+            <p>parrota</p>
+          
+    
+            <button onclick="addToCart('Parrota',20)">Add to Cart</button>
+        </div>
+         <div class="food-card" style="border-color: black;border-style: solid;">
+            <img style="border-color: rgb(191, 0, 255);border-style: solid;"   src="https://img.sanishtech.com/u/b12bcafdd651702dc1c05340ae7e4197.jpg" alt=>
+            <p>Veg Puffs</p>  
+            <p>₹30</p>
+            <p>Flaky Veg Stuffed Puffs</p>
+          
+    
+            <button onclick="addToCart('Veg Puffs',30)">Add to Cart</button>
+        </div>
+         <div class="food-card" style="border-color: black;border-style: solid;">
+            <img style="border-color: rgb(191, 0, 255);border-style: solid;"   src="https://img.sanishtech.com/u/c80baf48001243b599dfe702ecfdccd3.jpg" alt=>
+            <p>Chicken Puff</p>  
+            <p>₹35</p>
+            <p>Golden Chicken Puff Delight</p>
+           
+   
+            <button onclick="addToCart('Chicken Puff',35)">Add to Cart</button>
+        </div>
+         <div class="food-card" style="border-color: black;border-style: solid;">
+            <img style="border-color: rgb(191, 0, 255);border-style: solid;"   src="https://img.sanishtech.com/u/4b9e9e0bc859c221efccf3bdd20e3f94.jpg" alt=>
+            <p>Chicken Burger</p>  
+            <p>₹100</p>
+            <p>Golden Crunch Chicken Burger</p>
+           
+    
+            <button onclick="addToCart('Chicken Burger',100)">Add to Cart</button>
+        </div>
+         <div class="food-card" style="border-color: black;border-style: solid;">
+            <img style="border-color: rgb(191, 0, 255);border-style: solid;"   src="https://img.sanishtech.com/u/f794d5dca962b521f81494de33a5f407.jpg" alt=>
+            <p>Bread Omelet</p>  
+            <p>₹30</p>
+            <p>Spicy Herb Bread Omelet</p>
+           
+    
+  
+            <button onclick="addToCart('Bread Omelet',30)">Add to Cart</button>
+        </div>
+         <div class="food-card" style="border-color: black;border-style: solid;">
+            <img style="border-color: rgb(191, 0, 255);border-style: solid;"   src="https://img.sanishtech.com/u/b9034d185c22a19044cd1cef51e63b02.jpg" alt=>
+            <p>Chicken Pizza</p>  
+            <p>₹120</p>
+            <p>Gourmet Roasted Chicken Pizza</p>
+           
+
+            <button onclick="addToCart('Chicken Pizza',120)">Add to Cart</button>
+        </div>
+         <div class="food-card" style="border-color: black;border-style: solid;">
+            <img style="border-color: rgb(191, 0, 255);border-style: solid;"   src="https://img.sanishtech.com/u/4d6985c1ea77c3ee40e24b1d600ee8e1.jpg" alt=>
+            <p>Egg Gravy</p>  
+            <p>₹100</p>
+            <p>Andhra Spicy Egg Gravy</p>
+           
+    
+            <button onclick="addToCart('Egg Gravy',100)">Add to Cart</button>
+        </div>
+         <div class="food-card" style="border-color: black;border-style: solid;">
+            <img style="border-color: rgb(191, 0, 255);border-style: solid;"   src="https://img.sanishtech.com/u/0f90ab5f1f999897ff1aec183d8e9b81.jpg" alt=>
+            <p>Chicken Curry</p>  
+            <p>₹110</p>9
+            <p>Hearty Herb Chicken Curry</p>
+          
+    
+            <button onclick="addToCart('Chicken Curry',110)">Add to Cart</button>
+        </div>
+         <div class="food-card" style="border-color: black;border-style: solid;">
+            <img style="border-color: rgb(191, 0, 255);border-style: solid;"   src="https://img.sanishtech.com/u/6e0a5d7d24a002e7db050b6e127918fa.jpg" alt=>
+            <p>Rice & Sambar Meal</p>  
+            <p>₹100</p>
+            <p>Classic Rice & Sambar Meal</p>
+           
+     
+            <button onclick="addToCart('Rice & Sambar Meal',100)">Add to Cart</button>
+        </div>
+         <div class="food-card" style="border-color: black;border-style: solid;">
+            <img style="border-color: rgb(191, 0, 255);border-style: solid;"   src="https://img.sanishtech.com/u/5d3edc74d457a85a173a8d73bd2562aa.jpg" alt=>
+            <p>Crispy Chicken Rice</p>  
+            <p>₹100</p>
+            <p>Crispy Chicken & Savory Rice Combo</p>
+           
+    
+            <button onclick="addToCart('Crispy Chicken Rice',100)">Add to Cart</button>
+        </div>
+    </div>
+</div>
+<br>
+<hr style="border-color: brown;border-width: 4px;">
+    <!-- Cart -->
+        <div  class="cart">
+
+        <h2>🛒 Your Cart</h2>
+
+        <table id="cartTable" style="flex-direction: row;">
+            <thead>
+                <tr> 
+                    <th>Item</th>
+                    <th>Qty</th>
+                    <th>Price</th>
+                    <th>Total</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="cartItems">
+                <tr><td colspan="5">No items in cart</td></tr>
+            </tbody>
+        </table>
+
+        <h3>Total: ₹<span id="total">0.00</span></h3>
+
+                <button onclick="placeOrder()">Place Order</button>
+        </div>
+
+    <!-- Sales -->
+    <div id="salesPanel" class="sales">
+        <div style="text-align:right;margin-bottom:8px;"><button id="backToShop">Back to Shop</button></div>
+        <h2>📊 Sales</h2>
+        <div id="salesSummary">Total Sales: ₹<span id="salesTotal">0.00</span></div>
+        <div id="productSummary"></div>
+
+         <h3>Daily / Bills</h3>
+        <ul id="salesList"></ul>
+        <button id="clearSales">Clear Sales</button>
+
+        <br>
+
+        <h3>Monthly Summary</h3>
+        <div id="monthlySummary">
+            <ul id="monthlyList"></ul>
+        </div>
+
+       
+    </div>
+
+
+
+
+</div>
+
+
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
